@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:statemanagement_core/statemanagement_core.dart';
 import 'base_page_view_model.dart';
@@ -63,7 +62,20 @@ class DataProviderElement<T extends BasePageViewModel>
     return BaseWidget<T>(
       providerBase: providerBase,
       builder: (context, model, child) {
-        return widget.build(this, model!);
+        return StreamBuilder<bool>(
+          stream: model?.loadingSubject.stream,
+          builder: (context, snapshot) {
+            return Stack(
+              children: [
+                widget.build(this, model!),
+                if (snapshot.hasData && snapshot.data == true)
+                  Center(
+                    child: CircularProgressIndicator(),
+                  ),
+              ],
+            );
+          },
+        );
       },
     );
   }

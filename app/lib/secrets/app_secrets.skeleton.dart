@@ -1,5 +1,4 @@
-/*
- class AppSecrets {
+class AppSecrets {
   final String thirdpartyApiKey;
 
   const AppSecrets({
@@ -7,14 +6,14 @@
   });
 
   static const appSecretsDev = AppSecrets(
-   thirdpartyApiKey: "Your API Key",
+    thirdpartyApiKey: "Your API Key",
   );
 
   static const appSecretsQA = AppSecrets(
-   thirdpartyApiKey: "Your API Key",
+    thirdpartyApiKey: "Your API Key",
   );
 
   static const appSecretsProd = AppSecrets(
-   thirdpartyApiKey: "Your API Key",
+    thirdpartyApiKey: "Your API Key",
   );
- }*/
+}

@@ -1,10 +1,10 @@
-import 'package:app/errors/flutter_alert_error_presenter.dart';
-import 'package:app/errors/flutter_snack_bar_error_presenter.dart';
-import 'package:app/model/alert_texts.dart';
 import 'package:data/data.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_errors/flutter_errors.dart';
 import 'package:injectable/injectable.dart';
+import 'package:app/errors/flutter_alert_error_presenter.dart';
+import 'package:app/errors/flutter_snack_bar_error_presenter.dart';
+import 'package:app/model/alert_texts.dart';
 
 import '../../errors/flutter_toast_error_presenter.dart';
 

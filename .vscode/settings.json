@@ -1,0 +1,6 @@
+{
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "editor.formatOnPaste": true
+}

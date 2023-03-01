@@ -11,5 +11,4 @@ class AppService {
   /// Returns the [Get.key] value to be set in the applications material app
   static GlobalKey<State>? get appKey =>
       GlobalKey(debugLabel: 'appKey-app-key');
-
 }

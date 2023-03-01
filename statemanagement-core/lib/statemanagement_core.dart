@@ -4,5 +4,3 @@
 library statemanagement_core;
 
 export 'src/base_page_state.dart';
-
-
